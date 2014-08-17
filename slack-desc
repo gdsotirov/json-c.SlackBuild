@@ -1,0 +1,11 @@
+json-c: JSON (A JSON implementation in C)
+json-c:
+json-c: JSON-C implements a reference counting object model that allows you
+json-c: to easily construct JSON objects in C, output them as JSON formatted
+json-c: strings and parse JSON formatted strings back into the C representation
+json-c: of JSON objects.
+json-c:
+json-c:
+json-c:
+json-c:
+json-c: Packaged by Georgi D. Sotirov <gdsotirov@dir.bg>
