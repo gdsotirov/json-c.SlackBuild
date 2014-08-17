@@ -17,7 +17,7 @@
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 # 
-# $Id: json-c.SlackBuild,v 1.1 2014/08/17 17:19:23 gsotirov Exp $
+# $Id: json-c.SlackBuild,v 1.2 2014/08/17 17:23:10 gsotirov Exp $
 #
 
 . ../../slack-package.conf
@@ -58,8 +58,9 @@ CXXFLAGS=$SLKCFLAGS \
 ./configure --build=$ARCH-slackware-linux \
             --host=$ARCH-slackware-linux \
             --prefix=/usr \
-	    --enable-shared=yes \
-	    --enable-static=no || exit 4
+            --libdir=/usr/lib${LIBDIRSUFFIX} \
+            --enable-shared=yes \
+            --enable-static=no || exit 4
 
 # Build & install
 make -j4 all || exit 5
